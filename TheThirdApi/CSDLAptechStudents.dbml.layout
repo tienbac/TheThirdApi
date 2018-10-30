@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CSDLAptechStudents">
+  <DataContextMoniker Name="/CSDLAptechStudentsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fc8a2fcc-d64b-40c9-af23-f1da8ceeeada" absoluteBounds="3.375, 0.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/CSDLAptechStudentsDataContext/Student" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c44b34ef-59ab-42e0-ae61-726447f47c68" absoluteBounds="3.39, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1cb865d-bc35-499a-b5af-60563ac41fcd" absoluteBounds="0.625, 0.875, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/CSDLAptechStudentsDataContext/Class" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f09bbe8-271d-49db-8438-5668a5ebef86" absoluteBounds="0.64, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.625 : 1.85659912109375); (3.375 : 1.85659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CSDLAptechStudentsDataContext/Class/Class_Student" />
+      <nodes>
+        <classShapeMoniker Id="a1cb865d-bc35-499a-b5af-60563ac41fcd" />
+        <classShapeMoniker Id="fc8a2fcc-d64b-40c9-af23-f1da8ceeeada" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

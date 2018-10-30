@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CSDLAptechStudents" Class="CSDLAptechStudentsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-8FA28S8\SQLEXPRESS;Initial Catalog=CSDLAptechStudents;Persist Security Info=True;User ID=sa" SettingsObjectName="TheThirdApi.Properties.Settings" SettingsPropertyName="CSDLAptechStudentsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Student" Member="Students">
+    <Type Name="Student">
+      <Column Name="StudentId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StudentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StudentRollNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StudentEmail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StudentPhone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StudentAddress" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ClassId" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="StudentStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedAt" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UpdatedAt" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Class_Student" Member="Class" ThisKey="ClassId" OtherKey="ClassId" Type="Class" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Class" Member="Classes">
+    <Type Name="Class">
+      <Column Name="ClassId" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ClassName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ClassRollNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ClassStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedAt" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UpdatedAt" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Class_Student" Member="Students" ThisKey="ClassId" OtherKey="ClassId" Type="Student" />
+    </Type>
+  </Table>
+</Database>

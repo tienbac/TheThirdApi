@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="TheThirdApi.Properties.Settings.CSDLAptechStudentsConnectionString-Web.config Connection String" description="TheThirdApi.Properties.Settings.CSDLAptechStudentsConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=DESKTOP-8FA28S8\SQLEXPRESS;Initial Catalog=CSDLAptechStudents;Persist Security Info=True;User ID=sa;Password=Saobang123@123a!" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Documents\\Visual\ Studio\ 2017\\Projects\\TheThirdApi\\TheThirdApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TheThirdApi.Properties.Settings.CSDLAptechStudentsConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
